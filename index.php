@@ -6,8 +6,14 @@
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
+	<div class="topo">
+
+    <a type="submit" href="cadastro.php" class="button1"> Cadastro</a>
+    <a class="a1">BLOGER PÉROGGIH<a/>
+</div>
+
      <div id="corpo-form">
-	 <h1>Blogger Pérogii</h1>
 	 </div>
 	 <form method= "POST" action= "processa.php">
 	 <input type="text" class="inp" style="margin-top: 50px" placeholder="Login">	
