@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>mural</title>
+  <link rel="stylesheet" href="css/blogger.css">
 </head>
 <body>
 	<nav>
@@ -23,8 +24,8 @@
 	<option value="" readonly>OPÇÃO DE POST</option>
 	<option value="" disabled>**</option>
                 <option value="Citações">'Citações'</option>
-                <option value="Texto">Aa..</option>
-                <option value="Link">HTTP</option>
+                <option value="Texto">TEXTO..</option>
+                <option value="Link">Link</option>
             </select>
             <a href="newCategory.php">NOVA POSTAGEM</a>
             <input type="submit" value="enviar">
@@ -43,8 +44,9 @@
         </div>
     </div>
 
-    <div class="message ">
-        <div class="post post-1">TEXTO <a href="removeMessage.php?id=16" class="del" title="Remover mensagem">&times;</a></div>
+    <div class="menssagem ">
+    </div>ss
+        <div class="post post-1">TEXTO <a href="removeMessage.php?id=16" class="del" ></a></div>
         <div class="message-text">
           Posso ter defeitos, viver ansioso e ficar irritado algumas vezes, mas não esqueço que minha vida é a maior empresa do mundo. E que posso evitar que ela vá à falência.
          Ser feliz é reconhecer que vale a pena viver, apesar de todos os desafios, incompreensões e períodos de crise.

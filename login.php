@@ -20,8 +20,11 @@
 	 <input type="text" class="inp" style="margin-top: 50px" placeholder="Usuário">	
 
 	  <input type="password" class="inp" placeholder="Senha">
+	  <li><a href="blogger.php">
 
 	 <button type="submit"class="button">ACESSAR</button>
+
+	 <a href="logado.php" class="link-blogger"></a>
      <br>
      <br>
 	 </form>
