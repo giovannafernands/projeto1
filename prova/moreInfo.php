@@ -27,7 +27,7 @@ $infos = [
     'livro' => $livro[1],
     'Autor' => $livro[2],
     'Nome' => $user[2],
-    'Email' => $user[0],
+    'User_id' => $user[0],
     
 ];
 
