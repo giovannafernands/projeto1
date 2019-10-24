@@ -2,13 +2,12 @@
 
 include 'init.php';
 
-// foreach($_POST as $idx => $val) {
-//     $$idx = $val;
-// }
 $email = $_POST['email'] ?? '';
+$nome = $_POST['nome'] ?? '';
+$sobrenome = $_POST['sobrenome'] ?? '';
 $senha = $_POST['senha'] ?? '';
 $confirmar = $_POST['confirmar'] ?? '';
-$nome = $_POST['nome'] ?? '';
+
 
 ?>
 
@@ -24,7 +23,7 @@ $nome = $_POST['nome'] ?? '';
 <?php endif ?>
 
 <?php
-$data = join(SEPARATOR, [$email, sha1($senha), $nome]) . "\n";
+$data = join(SEPARATOR, [$email, $nome, $sobrenome, sha1($senha),]) . "\n";
 $handle = fopen(USERS_FILE, 'a');
 fwrite($handle, $data);
 redirect('reg_login.php?mes_reg=Usuário cadastrado com sucesso');

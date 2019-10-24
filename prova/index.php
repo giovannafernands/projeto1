@@ -4,13 +4,11 @@ include 'init.php';
 
 $items = file(ITEMS_FILE);
 $users = file(USERS_FILE);
-// echo "<pre>";
-// print_r($items);
-// echo "</pre>";
+
 $usersEmails = [];
 foreach($users as $userRow) {
-    list($email, , $nome, $fone) = explode(SEPARATOR, $userRow);
-    $usersEmails[$email] = [$nome, $fone];
+    list($email, , $nome, ) = explode(SEPARATOR, $userRow);
+    $usersEmails[$email] = [$nome, ];
 }
 $items = array_map(function($el) {
     list($email, $name, $autor) = explode(SEPARATOR, $el);
@@ -27,11 +25,14 @@ $items = array_map(function($el) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= TITLE ?></title>
+    <title>< TITLE ></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <h1>Sistema de Livros</h1>
+    <div class="banner">   
+    <a> MENU</a>
+  
+</div>
     <table border="1">
         <tr>
             <th>Livros</th>

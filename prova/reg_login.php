@@ -4,34 +4,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= TITLE ?> - Login / Registro</title>
+    <title> - Login / Registro</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+    <div class="banner">   
+    <a href="index.php" class="a2"> MENU</a>
+    
+    
+</div>
+ <form action="login.php" method="POST">
+        <fieldset>
+            <h3>Login</h3>
+           <label>Email</label> <input type="text" name="email" placeholder="Email">
+            <label>Senha</label><input type="password" name="senha" placeholder="Senha">
+            <input type="submit">
+        </fieldset>
+    </form>
+
+
+
+
     <form action="addUser.php" method="POST" >
         <fieldset>
-            <legend style="padding: 0 2em; border: 1px solid black; border-radius: 0.5em;">Registro</legend>
-            <?php if ($_GET['mes_reg'] ?? false): ?>
-                <span class="message"><?= $_GET['mes_reg'] ?></span>
-            <?php endif ?>
-            <input type="text" name="email" placeholder="Email">
-            <input type="password" name="senha" placeholder="Senha">
+            <h3>Cadastro</h3>
+                   <input type="text" name="email" placeholder="Email...">
+            <input type="text" name="nome"  placeholder="Nome...">
+            <input type="text" name="sobrenome" placeholder="Sobrenome...">
+            <input type="password" name="senha" placeholder="Senha...">
             <input type="password" name="confirmar" placeholder="Confirme a senha">
-            <input type="text" name="nome" placeholder="Nome">
+            
             <input type="submit">
         </fieldset>
     </form>
     <hr>
-    <form action="login.php" method="POST">
-        <fieldset>
-            <legend>Login</legend>
-            <?php if ($_GET['mes_log'] ?? false): ?>
-                <span class="message"><?= $_GET['mes_log'] ?></span>
-            <?php endif ?>
-            <input type="text" name="email" placeholder="Email">
-            <input type="password" name="senha" placeholder="Senha">
-            <input type="submit">
-        </fieldset>
-    </form>
+   
 </body>
 </html>
